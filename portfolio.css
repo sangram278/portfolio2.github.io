@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family:serif;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(23, 23, 25, 0.993);
+    /* background: url('WyESYh.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: blueviolet;
+    background: transparent;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.logo{
+    color: rgb(203, 203, 202);
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 700;
+}
+span{
+    color: rgb(80, 202, 250);
+}
+nav a{
+    text-decoration: none;
+    color: rgb(165, 162, 158);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right:1.8rem ;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative
+}
+nav a::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background: rgb(73, 181, 172);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+#content{
+    margin: 120px 7%;
+    padding: 0 40rem 0 0;
+    align-items: center;
+    letter-spacing: 2px;
+    color: beige;
+    line-height:1.5;
+}
+#content h1{
+    margin: 5px;
+    font-size: 3rem;
+    color: rgb(175, 174, 174);
+}
+#content h3{
+    margin: 5px;
+    font-size: 2rem;
+    color: aqua;
+} 
+#content p{
+    line-height: 1.4;
+    margin: 15px 0 20px;
+}
+ 
+.btn {
+    background:aqua;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    padding: 9px 14px;
+    border: 2px solid rgb(15, 159, 242);
+    border-radius: 8px;
+    /* z-index: 1;
+    overflow: hidden; */
+}
+/* .btn a{
+    text-decoration: none;
+    /* color: black; 
+}
+.btn a:hover{
+    color: aqua;
+} */
+.btn:hover{
+    background:transparent;
+    color:aqua;
+    transition: 0.4s;
+}
+/*.btn a::before{
+    content: ' ';
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(72, 10, 101);
+    z-index: -1;
+    transition: 0.5s;
+} 
+.btn a:hover::before{
+    width: 100%;
+} 
+   */
+.icon {
+    position: relative;
+    bottom: 100px;
+    margin-left: 6.5rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aquamarine;
+    text-decoration: none;
+}
+.fa-facebook{
+    color: rgb(6, 99, 135);
+}
+.fa-twitter{
+    color: rgb(74, 197, 246);
+}
+.fa-linkedin{
+    color: rgb(33, 102, 130);
+}
+
+/* .about{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(3, 3, 53, 0.993);
+    align-items: center;
+    justify-content: space-between;
+}
+.about .image{
+    flex-basis: 50%;
+    background:url('OIP.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16rem 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgb(15, 4, 79);
+}
+.about #about{
+    flex-basis: 40%;
+} */
+.about{
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    align-items: center;
+    width: 100%;
+    padding: 100px 0;
+}
+.about img{
+    height: auto;
+    width: 15rem;
+}
+.about #about{
+    width: 40rem;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main h1{
+    font-size: 2rem;
+    color: rgb(111, 111, 111);
+    margin-bottom: 20px;
+}
+.main h3{
+    font-size: 3rem;
+    color: rgb(6, 64, 101);
+    margin-bottom: 20px;
+}
+.main p{
+    color: rgb(143, 142, 142);
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+.service{
+    background: rgb(22, 22, 22);
+    width: 100%;
+    padding: 100px 0px;
+}
+.header h3{
+    color: rgb(122, 118, 118);
+    font-size:4rem;
+    width: 30rem;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 25rem;
+    width: 23rem;
+    padding: 20px 30px;
+    background:rgb(46, 46, 46) ;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: rgb(30, 112, 205);
+}
+h5{
+    color: rgb(150, 147, 147);
+    font-size: 23px;
+    margin-bottom: 13px;
+}
+.pra p{
+    color: rgb(61, 102, 158);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.button{
+    background-color: rgb(57, 153, 153);
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.button:hover{
+background-color: transparent;
+border: 2px solid rgb(54, 92, 92);
+color: aqua;
+cursor: pointer;
+}
+.contact{
+    height: 45vh;
+    width: 100%;
+    background: rgb(29, 29, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact h1{
+    color: rgb(122, 118, 118);
+    font-size:4rem;
+    width: 30rem;
+    margin: 30px auto;
+    text-align: center;
+}
+.contact a{
+    margin: 12px auto;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(13, 77, 134);
+}
+
+.submit{
+        background-color: rgb(57, 153, 153);
+        color: black;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-size: large;
+        font-weight: 600;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transition: 0.4s;
+}
+.submit:hover{
+    background-color: transparent;
+    border: 2px solid rgb(54, 92, 92);
+    color: aqua;
+    cursor: pointer;
+}
